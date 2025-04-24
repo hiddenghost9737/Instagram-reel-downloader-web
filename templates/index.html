@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upscaler</title>
+    <style>
+        /* General styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header styles */
+        header {
+            background: linear-gradient(145deg, #00c6ff, #0072ff);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        /* Main section */
+        main {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .upload-section {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .upload-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .upload-section form {
+            display: inline-block;
+        }
+
+        .upload-section input[type="file"] {
+            padding: 10px;
+            font-size: 1rem;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 2px solid #ccc;
+            background-color: #f9f9f9;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .upload-button {
+            padding: 12px 24px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #0072ff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .upload-button:hover {
+            background-color: #005cbf;
+        }
+
+        /* Output section */
+        .output-section {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .output-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        #output img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            font-size: 1rem;
+            color: #555;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Image Upscaler</h1>
+            <p>Enhance your images with advanced AI technology.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="upload-section">
+            <h2>Upload Your Image</h2>
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <input type="file" id="image-file" name="image" accept="image/*" required>
+                <button type="submit" class="upload-button">Upload</button>
+            </form>
+        </section>
+
+        <section class="output-section">
+            <h2>Upscaled Image</h2>
+            <div id="output">
+                <!-- Upscaled image will appear here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Image Upscaler. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
