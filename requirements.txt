@@ -1,4 +1,7 @@
-flask
-yt-dlp
 gunicorn
-requests
+Flask
+transformers
+diffusers
+torch
+pillow
+numpy
