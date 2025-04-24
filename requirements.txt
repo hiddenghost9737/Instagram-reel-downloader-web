@@ -1,7 +1,7 @@
 gunicorn
-Flask
-transformers
-diffusers
-torch
-pillow
-numpy
+Flask==2.3.2
+requests==2.31.0
+beautifulsoup4==4.12.2
+nltk==3.8.1
+textblob==0.17.1
+spacy==3.7.2
